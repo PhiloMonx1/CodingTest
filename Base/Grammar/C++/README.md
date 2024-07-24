@@ -7,9 +7,14 @@
 예시 코드는 https://github.com/HongLabInc/HongLabCppSummary 에서 받을 수 있습니다. (본 프로젝트에서는 예시코드의 세팅을 따르지 않기 때문에 Ex01~Ex18 폴더만 붙여넣기함.)
 
 ## 목차
+
+#### 환경 설정
 1. [C++ 환경 설정 window](#1-c-윈도우-설정-방법)
 2. [컴퓨터 프로그램의 작동 과정](#2-컴퓨터-프로그램의-작동-과정)
 3. [메모리 레이아웃](#3-메모리-레이아웃)
+
+#### 예시 코드 실습
+4. [예제 1번 HelloWorld](#4-예제-1--helloworld)
 
 ## 1. C++ 윈도우 설정 방법
 [Visual Studio 공식 페이지](https://code.visualstudio.com/docs/languages/cpp#_example-install-mingwx64-on-windows) 를 참고하여 'MinGW'(C++ 컴파일러)를 설치한다. 
@@ -85,5 +90,30 @@
   - Heap : 미리 크기를 알 수 없는 경우 Heap 영역에 저장된다.
     - 프로그래머가 직접 메모리를 할당하고 해제해야 한다. (C++에서는 new와 delete 사용)
     - 메모리 누수(Memory Leak)의 주요 원인이 될 수 있다.
+
+---
+
+## 4. 예제 1 : HelloWorld
+[Ex01_HelloWorld/main.cpp](Training/Ex01_HelloWorld/main.cpp)
+1. 주석 : '//'를 사용해서 한 줄 주석 '/* */'를 사용해서 여러 줄 주석을 사용할 수 있다.
+2. `#include <헤더파일>`를 통해 지정된 파일의 내용을 현재 소스 코드에 포함 할 수 있다.
+    - 컴파일러는 미리 정의된 디렉토리에서 지정된 헤더파일을 찾는다.
+    - 자바로 따지면 `import 패키지.클래스파일`에 해당한다. 
+3. `<iostream>` : 입출력 기능이 포함된 C++의 표준 라이브러리 헤더
+4. `usesing namespace std;` : `std`의  
+   - std 네임스페이스의 모든 요소를 현재 스코프로 가져온다.
+     - std::cout 대신 그냥 cout를 사용할 수 있다.
+   - std는 C++ 표준 라이브러리의 모든 요소가 정의된 네임스페이스이다.
+   - 자바에서는 네임스페이스와 정확히 일치하는 개념은 없지만, 패키지(package)가 비슷한 역할을 한다.
+5. `int main(){}` : 함수 선언
+   - int : 함수의 반환 타입
+   - main : 함수의 이름
+   - () : 함수의 파라미터
+   - {} : 함수의 내용
+6. `cout << "Hello, World!" << endl;`
+   - cout : 콘솔에 텍스트를 출력하는 C++의 표준 출력 스트림 객체 ("console output"의 약자이다.)
+   - `<<` : 삽입 연산자, 오른쪽의 데이터를 왼쪽의 스트림으로 보내는 역할을 수행
+     - `cout` 객체에 "Hello, World!"와 endl를 순서대로 삽입한다.
+   - endl : 줄바꿈 문자를 출력하고 출력 버퍼를 비우는 역할 ("end line"의 약자)
 
 ---
