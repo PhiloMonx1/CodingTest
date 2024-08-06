@@ -1,2 +1,58 @@
 /Base/Grammar/C++/001_FristSetting/.vscode/
 *.exe
+
+### IntelliJ IDEA ###
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
+
+### Eclipse ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### VS Code ###
+.vscode/
+
+### Mac OS ###
+.DS_Store
+/.idea/sonarlint/issuestore/2/5/25ba5bfa2c7fed08fd4e2fff60e3c7d60b9c65f7
+/.idea/sonarlint/issuestore/4/0/4085a18fc3089cdd5a8cb9ebaa7cecff79c3f29e
+/.idea/sonarlint/issuestore/5/0/507c479d9fa5320390fd3defdb873abc0a6fc032
+/.idea/sonarlint/issuestore/5/c/5c1162f7627d6d28382b6de779e82ed4acae77f7
+/.idea/sonarlint/issuestore/8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
+/.idea/sonarlint/issuestore/a/5/a5cc2925ca8258af241be7e5b0381edf30266302
+/.idea/sonarlint/issuestore/b/d/bd489a40e91c3d7422455ecdaad05e4504989aba
+/.idea/sonarlint/issuestore/c/1/c11499b8ea5635e143430c83384061cdf620d190
+/.idea/sonarlint/issuestore/d/7/d708e2a6724a57e7b3f61556997cce7d72c3fea5
+/.idea/sonarlint/issuestore/index.pb
+/.idea/sonarlint/securityhotspotstore/2/5/25ba5bfa2c7fed08fd4e2fff60e3c7d60b9c65f7
+/.idea/sonarlint/securityhotspotstore/4/0/4085a18fc3089cdd5a8cb9ebaa7cecff79c3f29e
+/.idea/sonarlint/securityhotspotstore/5/0/507c479d9fa5320390fd3defdb873abc0a6fc032
+/.idea/sonarlint/securityhotspotstore/5/c/5c1162f7627d6d28382b6de779e82ed4acae77f7
+/.idea/sonarlint/securityhotspotstore/8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
+/.idea/sonarlint/securityhotspotstore/a/5/a5cc2925ca8258af241be7e5b0381edf30266302
+/.idea/sonarlint/securityhotspotstore/b/d/bd489a40e91c3d7422455ecdaad05e4504989aba
+/.idea/sonarlint/securityhotspotstore/c/1/c11499b8ea5635e143430c83384061cdf620d190
+/.idea/sonarlint/securityhotspotstore/d/7/d708e2a6724a57e7b3f61556997cce7d72c3fea5
+/.idea/sonarlint/securityhotspotstore/index.pb
+/.idea/.gitignore
+/.idea/CodingTest.iml
+/.idea/jpa-buddy.xml
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/vcs.xml
