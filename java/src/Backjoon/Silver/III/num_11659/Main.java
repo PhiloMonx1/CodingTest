@@ -2,33 +2,37 @@ package Backjoon.Silver.III.num_11659;
 
 import java.io.BufferedReader;
 import java.io.IOException;
-import java.util.Arrays;
+import java.util.StringTokenizer;
 
 /**
- * 제출번호 : 82158402, 메모리 : 60436 KB, 시간 : 584 ms, 언어 : Java 11, 코드 길이 : 1408 B
+ * 제출번호 : 82159222, 메모리 : 53960 KB, 시간 : 536 ms, 언어 : Java 11, 코드 길이 : 1589 B
+ * <p>
+ * 개선 : `split()` 대신  `StringTokenizer` 사용해서 효율성 개선
  */
 public class Main {
 
 	public static void main(String[] args) throws IOException {
-		BufferedReader bufferedReader = new BufferedReader(new java.io.InputStreamReader(System.in));
-		String input = bufferedReader.readLine();
-		String[] inputArr = input.split(" ");
-		int M = Integer.parseInt(inputArr[1]);
+		BufferedReader bufferedReader = new BufferedReader(
+				new java.io.InputStreamReader(System.in));
+		StringTokenizer stringTokenizer = new StringTokenizer(bufferedReader.readLine());
 
-		String[] arr = bufferedReader.readLine().split(" ");
-		int[] arrInt = Arrays.stream(arr)
-				.mapToInt(Integer::parseInt)
-				.toArray();
+		int N = Integer.parseInt(stringTokenizer.nextToken());
+		int M = Integer.parseInt(stringTokenizer.nextToken());
 
+		stringTokenizer = new StringTokenizer(bufferedReader.readLine());
+
+		int[] arrInt = new int[N];
+		for (int i = 0; i < arrInt.length; i++) {
+			arrInt[i] = Integer.parseInt(stringTokenizer.nextToken());
+		}
 		int[] prefixSumArray = createPrefixSumArray(arrInt);
 
 		StringBuilder result = new StringBuilder();
 
 		for (int i = 0; i < M; i++) {
-			input = bufferedReader.readLine();
-			inputArr = input.split(" ");
-			int left = Integer.parseInt(inputArr[0]);
-			int right = Integer.parseInt(inputArr[1]);
+			stringTokenizer = new StringTokenizer(bufferedReader.readLine());
+			int left = Integer.parseInt(stringTokenizer.nextToken());
+			int right = Integer.parseInt(stringTokenizer.nextToken());
 
 			result.append(calculateRangeSum(prefixSumArray, left, right)).append("\n");
 		}
